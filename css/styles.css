@@ -11,6 +11,10 @@ body {
   background: url('img/DSCN1912.JPG') no-repeat center center/cover;
 }
 
+img {
+  background-color: transparent !important;
+}
+
 ul {
   display: flex;
   align-items: center;
