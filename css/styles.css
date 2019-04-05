@@ -60,6 +60,10 @@ a {
   font-size: 1.25rem;
 }
 
+.logo-container {
+  margin-top: -2rem;
+}
+
 .logo {
   font-family: 'Poiret One', cursive;
   font-size: 3.3rem;
