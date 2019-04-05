@@ -36,7 +36,7 @@ body {
 ul {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style: none;
   height: 100%;
 }
@@ -47,7 +47,7 @@ ul span {
 }
 
 li {
-  width: 33.33333%;
+  /* width: 33.33333%; */
   /* height: 100%; */
   text-align: center;
 }
