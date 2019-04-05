@@ -54,7 +54,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #eee;
   padding: 0.3rem 1rem;
   width: 100%;
   font-size: 1.25rem;
@@ -80,7 +80,7 @@ a {
   color: #aaa;
   text-align: right;
   font-size: 0.57rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .plug {
