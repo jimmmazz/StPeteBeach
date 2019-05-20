@@ -1,15 +1,20 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   height: 100vh;
   background-color: #10acd3;
   font-family: 'Open Sans', sans-serif;
-  background: url('../img/jeremy-ricketts-9573-unsplash.png') no-repeat center
-    center/cover;
+  box-sizing: border-box;
 }
 
 .bkgd-img-mask {
@@ -19,7 +24,14 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: rgba(178, 193, 243, 0.3);
+  /* background-color: rgba(178, 193, 243, 0.3); */
+  background: linear-gradient(
+      to right,
+      rgba(178, 193, 243, 0.3),
+      rgba(178, 193, 243, 0.3)
+    ),
+    url('../img/jeremy-ricketts-9573-unsplash.png') no-repeat center
+      center/cover;
 }
 
 .content {
@@ -64,7 +76,7 @@ a {
   grid-row: 1;
   grid-column: 1/3;
   font-family: 'Poiret One', cursive;
-  font-size: 3.3rem;
+  font-size: 5rem;
   color: #4888b9;
   font-weight: bolder;
 }
@@ -95,7 +107,7 @@ a {
 
 .logo-span {
   font-family: 'Poiret One', cursive;
-  font-size: 3.3rem;
+  font-size: 5rem;
   text-align: right;
   color: #4888b9;
   font-weight: bolder;
@@ -105,14 +117,15 @@ a {
   display: block;
   color: #aaa;
   text-align: right;
-  font-size: 0.57rem;
+  font-size: 0.85rem;
   /* margin-bottom: 2rem; */
 }
 
 .plug {
   color: #888;
-  line-height: 1.4;
-  padding: 0.5rem;
+  font-size: 1.5rem;
+  /* line-height: 1.4; */
+  padding: 1rem;
   /* margin-bottom: 2rem; */
 }
 
@@ -121,7 +134,7 @@ a {
   height: 100%;
 
   border-radius: 7px;
-  box-shadow: 5px 5px 18px #000;
+  box-shadow: 1rem 1rem 8rem rgba(0, 0, 0, 0.55);
 }
 
 .navbar {
