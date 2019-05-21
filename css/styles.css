@@ -85,18 +85,19 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
+}
+
+.checked {
+  display: none;
 }
 
 .toggler {
   position: relative;
   z-index: 1000;
-  height: 60px;
-  width: 100%;
-  opacity: 50%;
+  font-size: 2rem;
 }
 
-.toggler:checked ~ .navbar {
+.checked:checked ~ .navbar {
   visibility: visible;
   transform: scaleX(1);
   transform: scaley(1);
